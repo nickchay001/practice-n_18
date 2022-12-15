@@ -1,0 +1,140 @@
+/*-----RESETS STYLES-------*/
+
+@import "nullstyle.scss";
+
+
+
+/*--------------FONTS----------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+/*------------BODY-----------------*/
+
+body {
+	font-family: Roboto;
+	font-weight: 400;
+}
+
+/*------BODY.LOCK FOR BURGER-------*/
+
+body._lock {
+	overflow: hidden;
+}
+
+
+/*-----------WRAPPER--------------*/
+
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	margin: 0px auto;
+	flex-direction: column;
+}
+
+/*--------------CONTAINER----------*/
+
+[class*="__container"] {
+	max-width: 1280px;
+	margin: 0px auto;
+
+	position: relative;
+	box-sizing: border-box;
+
+
+
+
+
+}
+
+/*------------CONTAINER-BIG--------*/
+[class*="__container-big"] {
+	max-width: 1440px;
+	margin: 0px auto;
+	padding: 0px 20px;
+	position: relative;
+	overflow: hidden;
+	box-sizing: border-box;
+
+	@media (max-width: 768px) {
+		padding: 0px 15px;
+	}
+
+	@media (max-width: 425px) {
+		padding: 0px 10px;
+	}
+
+}
+
+
+
+
+/*----------TITLE-----------*/
+
+.title {}
+
+/*----------SUB-TITLE-----------*/
+
+.sub-title {}
+
+/*----------PARAGRAPH-----------*/
+
+.paragraph {}
+
+/*---------BUTTON-----------*/
+
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 13px 30px 17px;
+
+
+	background: #1F1E1E;
+	border-radius: 4px;
+
+
+	font-size: 12px;
+	line-height: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+
+	transition-duration: 400ms;
+
+	&:hover {
+		background: #494747;
+	}
+}
+
+
+
+
+/*-----------IMPORTS----------------*/
+
+/*-----------HEADER----------------*/
+
+@import "header.scss";
+
+/*-----------MAIN-------------*/
+
+main {
+	flex: 1 1 auto
+}
+
+@import "page__banner.scss";
+@import "page__two-banners.scss";
+@import "page__about-us.scss";
+@import "page__products.scss";
+@import "page__powerhouse.scss";
+@import "page__story.scss";
+@import "page__partners.scss";
+@import "page__commerce.scss";
+@import "page__answers.scss";
+@import "page__follow.scss";
+
+
+
+/*-----------FOOTER-----------*/
+
+@import "footer.scss";
